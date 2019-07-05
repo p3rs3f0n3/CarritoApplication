@@ -1,0 +1,63 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="etiquetabase" parent="@android:style/Widget.TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">344dp</item>
+        <item name="android:layout_marginTop">160dp</item>
+    </style>
+
+    <style name="etiquetas" parent="@android:style/Widget.TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">344dp</item>
+        <item name="android:layout_marginLeft">45dp</item>
+        <item name="android:textColor">@color/secondaryText</item>
+    </style>
+
+    <style name="entrada" parent="@android:style/Widget.EditText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">45dp</item>
+        <item name="android:layout_width">344dp</item>
+        <item name="android:textColor">@color/colorTodoLosTextos</item>
+        <item name="android:backgroundTint">@color/colorTodoLosTextos</item>
+    </style>
+
+    <style name="radiobutton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/colorTodoLosTextos</item>
+        <item name="android:backgroundTint">@color/colorTodoLosTextos</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="checkBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:layout_height">21dp</item>
+        <item name="android:layout_width">328dp</item>
+        <item name="android:layout_marginLeft">45dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textColor">@color/colorTodoLosTextos</item>
+        <item name="android:buttonTint">@color/colorTodoLosTextos</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:text">"¿Te mostramos la contraseña o que?"</item>
+    </style>
+
+
+    <style name="button" parent="@android:style/Widget.Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">138dp</item>
+        <item name="android:textColor">@color/colorTodoLosTextos</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:text">Seguí ve</item>
+    </style>
+
+</resources>

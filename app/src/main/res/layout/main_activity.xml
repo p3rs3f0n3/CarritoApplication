@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorFondoPantallas">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="40dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorTodoLosTextos"
+                android:text="LA FRITANGUERÍA"
+                android:textSize="18dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="389dp"
+            android:layout_height="13dp"
+            android:layout_marginTop="20dp"
+            android:gravity="start">
+
+            <TextView
+                android:layout_width="336dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:gravity="start"
+                android:text="Bienvenid@"
+                android:textColor="@color/colorTodoLosTextos"
+                android:textSize="18dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="start"
+            android:layout_marginTop="20dp">
+
+            <RadioGroup
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="35dp">
+
+                <RadioButton
+                    style="@style/radiobutton"
+                    android:id="@+id/radioNuevo"
+                    android:text="Crear cuenta. ¿Eres Nuevo?"
+                    android:checked="false"
+                    android:onClick="ClicRadioButton"/>
+
+                <RadioButton
+                    style="@style/radiobutton"
+                    android:id="@+id/radioCliente"
+                    android:text="Inicio de sesión. ¿Ya eres cliente?"
+                    android:checked="true"
+                    android:layout_marginTop="10dp"
+                    android:onClick="ClicRadioButton"/>
+
+            </RadioGroup>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_contenedor_nuevo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/etiquetabase"
+            android:layout_marginTop="200dp"/>
+
+        <EditText
+            android:id="@+id/txtNombre"
+            style="@style/entrada"
+            android:inputType="textPersonName"
+            android:hint="Escribí tú Nombre"/>
+
+        <EditText
+            android:id="@+id/txtMail"
+            style="@style/entrada"
+            android:inputType="textPersonName"
+            android:hint="Colocá tú mail"/>
+
+        <EditText
+            android:id="@+id/txtContraseña"
+            style="@style/entrada"
+            android:inputType="textPassword"
+            android:hint="Asigná una contraseña"/>
+
+        <Button
+            style="@style/button"
+            android:id="@+id/btnClienteNuevo"
+            android:onClick="btnCrearUsuario"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_contenedor_cliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/etiquetabase"
+            android:layout_marginTop="200dp"/>
+
+        <EditText
+            android:id="@+id/txtMailCliente"
+            style="@style/entrada"
+            android:inputType="textPersonName"
+            android:hint="Escribí tú Correo"/>
+
+        <EditText
+            android:id="@+id/txtContraseñaCliente"
+            style="@style/entrada"
+            android:inputType="textPassword"
+            android:hint="Escribí tú contraseña"/>
+
+        <Button
+            android:id="@+id/btnIngresar"
+            style="@style/button"
+            android:onClick="btnSeguiVe"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="500dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorTodoLosTextos"
+            android:textSize="18dp"
+            android:text="O entrá por acási querés"/>
+
+       <com.facebook.login.widget.LoginButton
+            android:id="@+id/buttonFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+           android:onClick="btnIngresarFacebook"/>
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/buttonGmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="btnIngresarGmail"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#7B1FA2</color>
+    <color name="colorAccent">#FF5722</color>
+    <color name="ligthPrimaryColor">#E1BEE7</color>
+    <color name="primaryText">#212121</color>
+    <color name="colorPrimary">#9C27B0</color>
+    <color name="secondaryText">#757575</color>
+    <color name="iconText">#FFFFFF</color>
+    <color name="dividerColor">#BDBDBD</color>
+
+    <color name="colorFondoPantallas">#7B1FA2</color>
+    <color name="colorTodoLosTextos">#FF7133</color>
+
+
+
+
+
+
+
+</resources>

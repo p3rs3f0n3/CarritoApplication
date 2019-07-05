@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "223847469280",
+    "firebase_url": "https://appcarritocompras.firebaseio.com",
+    "project_id": "appcarritocompras",
+    "storage_bucket": "appcarritocompras.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223847469280:android:7ac5f03d2549ce6d",
+        "android_client_info": {
+          "package_name": "com.example.mispeliculas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "223847469280-40m17ns88emrq43edecmdlosq1pl57fk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mispeliculas",
+            "certificate_hash": "16f0dfb348559d07add9aadfc330ed3ad95f5d1c"
+          }
+        },
+        {
+          "client_id": "223847469280-l6t7gpohe78v7j58cb401mvtkaqe6imv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcz_y40p8YzOiHgepciMoTs7zhzW1wEvg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "223847469280-l6t7gpohe78v7j58cb401mvtkaqe6imv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
