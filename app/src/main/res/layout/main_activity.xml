@@ -10,16 +10,17 @@
         android:layout_height="match_parent">
 
         <TableRow
-            android:layout_height="wrap_content"
             android:layout_width="fill_parent"
-            android:gravity="center_horizontal"
-            android:layout_marginTop="40dp">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal"
-                android:textColor="@color/colorTodoLosTextos"
                 android:text="LA FRITANGUERÍA"
+                android:textColor="@color/colorTodoLosTextos"
                 android:textSize="18dp" />
         </TableRow>
 
@@ -40,30 +41,30 @@
         </TableRow>
 
         <TableRow
-            android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:gravity="start"
-            android:layout_marginTop="20dp">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="start">
 
             <RadioGroup
-                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="35dp">
 
                 <RadioButton
-                    style="@style/radiobutton"
                     android:id="@+id/radioNuevo"
-                    android:text="Crear cuenta. ¿Eres Nuevo?"
+                    style="@style/radiobutton"
                     android:checked="false"
-                    android:onClick="ClicRadioButton"/>
+                    android:onClick="ClicRadioButton"
+                    android:text="Crear cuenta. ¿Eres Nuevo?" />
 
                 <RadioButton
-                    style="@style/radiobutton"
                     android:id="@+id/radioCliente"
-                    android:text="Inicio de sesión. ¿Ya eres cliente?"
-                    android:checked="true"
+                    style="@style/radiobutton"
                     android:layout_marginTop="10dp"
-                    android:onClick="ClicRadioButton"/>
+                    android:checked="true"
+                    android:onClick="ClicRadioButton"
+                    android:text="Inicio de sesión. ¿Ya eres cliente?" />
 
             </RadioGroup>
 
@@ -140,8 +141,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="450dp"
         android:layout_gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ingresar"
+            android:onClick="btnTemporal"/>
 
         <TextView
             android:layout_width="match_parent"

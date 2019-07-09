@@ -17,7 +17,8 @@ public class SplashActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle saveInstance)
     {
-        inicioAplicacion();
+        //metodo que hace vibrar la app al iniciar
+        //inicioAplicacion();
 
         super.onCreate(saveInstance);
         setContentView(R.layout.splash);

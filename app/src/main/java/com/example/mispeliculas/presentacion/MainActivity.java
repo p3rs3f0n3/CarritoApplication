@@ -368,5 +368,10 @@ public class MainActivity extends AppCompatActivity
         updateUI(null);
     }
 
+    public void btnTemporal(View view)
+    {
+        IniciarCarrito();
+    }
+
 }
 
